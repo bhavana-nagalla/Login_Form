@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^1.6.7",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "create-react-app": "^5.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3",
+    "tar": "^6.2.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server",
+    "registration":"npm start --prefix registration",
+    "dev":"concurrently \"npm run server\" \"npm run registration\"  "
+  },
+  "name": "css_bootstrap",
+  "version": "1.0.0",
+  "description": "registration form",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "bhavana",
+  "license": "ISC"
+}
